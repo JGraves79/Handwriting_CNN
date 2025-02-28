@@ -116,6 +116,9 @@ for filename in os.listdir(directory):
         }
         results.append(result)
 
+# Add a 'Handedness' column to the results
+handedness_label = 1  # Change to 1 for right-handed samples
+
 # Process each image in the directory
 for filename in os.listdir(directory):
     if filename.endswith('.jpg') or filename.endswith('.jpeg') or filename.endswith('.png'):
