@@ -10,7 +10,7 @@ processor = TrOCRProcessor.from_pretrained('microsoft/trocr-base-handwritten')
 model = VisionEncoderDecoderModel.from_pretrained('microsoft/trocr-base-handwritten')
 
 # Define the directory containing your handwriting samples
-directory = r'C:\Users\16154\vu\Group Project\project 4\Handwriting_CNN\Source_jpeg'
+directory = r'C:\Users\16154\vu\Group Project\project 4\Handwriting_CNN\trOCR\Right-Handed Processed'
 
 # Initialize a list to store results
 results = []
@@ -116,8 +116,38 @@ for filename in os.listdir(directory):
         }
         results.append(result)
 
+# Process each image in the directory
+for filename in os.listdir(directory):
+    if filename.endswith('.jpg') or filename.endswith('.jpeg') or filename.endswith('.png'):
+        image_path = os.path.join(directory, filename)
+        image = preprocess_image(image_path)
+        
+        # Analyze various handwriting features
+        slant = analyze_slant(image)
+        stroke_direction = analyze_stroke_direction(image)
+        curvature, smoothness = analyze_curvature_and_smoothness(image)
+        pressure = analyze_pressure_distribution(image)
+        
+        # Use TrOCR model to recognize text
+        pixel_values = processor(images=image, return_tensors='pt').pixel_values
+        generated_ids = model.generate(pixel_values, max_new_tokens=50)
+        transcription = processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
+        
+        # Store results in a dictionary
+        result = {
+            'Filename': filename,
+            'Transcription': transcription,
+            'Slant': slant,
+            'StrokeDirection': stroke_direction,
+            'Curvature': curvature,
+            'Smoothness': smoothness,
+            'Pressure': pressure,
+            'Handedness': handedness_label
+        }
+        results.append(result)
+
 # Save results to a CSV file
 results_df = pd.DataFrame(results)
-results_df.to_csv('handwriting_analysis_results.csv', index=False)
+results_df.to_csv('right_feature_extraction_results.csv', index=False)
 
-print("Handwriting analysis completed and results saved to handwriting_analysis_results.csv")
+print("Right feature extraction completed and results saved")
