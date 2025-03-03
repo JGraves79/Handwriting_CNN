@@ -1,0 +1,47 @@
+wid,agegroup,gender,hand,thirdgrade_usa,thirdgrade_usa_region,s1_dae,s1_time,s2_dae,s2_time,s3_dae,s3_time,db_version
+95,41-60,female,right,True,midwest,0.0,lateevening,36.0,lateevening,95.0,lateafternoon,version5
+513,18-24,Female,Right,True,Midwest,0.0,Early Afternoon,39.0,Late Morning,65.0,Early Afternoon,version5
+548,41-60,Male,Right,True,Midwest,0.0,Late morning (9:30am-12:00pm),33.0,Late morning (9:30am-12:00pm),129.0,Early afternoon (12:00pm-2:30pm),version5
+698,41-60,Female,Right,True,Midwest,0.0,Early afternoon (12:00pm-2:30pm),22.0,Early evening (5pm-7:30pm),48.0,Late evening (later than 7:30pm),version5
+384,18-24,Female,Right,True,Midwest,0.0,Early Evening,27.0,Early Afternoon,62.0,Late Morning,version5
+249,25-40,Female,Right,True,Midwest,0.0,Late Afternoon,21.0,Late Afternoon,135.0,Early Evening,version5
+286,41-60,Male,Right,True,Midwest,0.0,Early Evening,21.0,Early Afternoon,50.0,Early Morning,version5
+138,25-40,female,right,True,midwest,0.0,earlyafternoon,21.0,earlyafternoon,42.0,latemorning,version5
+590,61+,Male,Right,True,Midwest,0.0,Early afternoon (12:00pm-2:30pm),23.0,Late morning (9:30am-12:00pm),57.0,Early morning (earlier than 9:30am),version5
+476,25-40,Female,Right,True,South,0.0,Early Afternoon,20.0,Late morning (9:30am-12:00pm),138.0,Late Morning,version5
+32,18-24,male,right,True,midwest,0.0,earlyevening,23.0,lateafternoon,50.0,earlyafternoon,version5
+362,18-24,Female,Right,True,Midwest,0.0,Late Afternoon,29.0,Early Afternoon,58.0,Early Afternoon,version5
+464,18-24,Female,Right,True,Midwest,0.0,Late Morning,22.0,Early Afternoon,43.0,Early Morning,version5
+157,18-24,Male,Right,True,Midwest,0.0,Early Evening,25.0,Early Afternoon,58.0,Evening,version5
+682,18-24,Female,Right,True,,0.0,Late morning (9:30am-12:00pm),34.0,Late morning (9:30am-12:00pm),102.0,Early evening (5pm-7:30pm),version5
+445,18-24,Female,Right,True,Midwest,0.0,Early Afternoon,33.0,Late Morning,111.0,Late Morning,version5
+537,18-24,Male,Right,False,,0.0,Late Morning,24.0,Late Evening,46.0,Late Evening,version5
+711,41-60,Female,Right,True,South,0.0,Late morning (9:30am-12:00pm),32.0,Late evening (later than 7:30pm),69.0,Early morning (earlier than 9:30am),version5
+305,41-60,Female,Right,True,Midwest,0.0,Early Evening,48.0,Late Afternoon,86.0,Late Afternoon,version5
+152,18-24,male,right,True,midwest,0.0,earlymorning,21.0,earlyafternoon,52.0,latemorning,version5
+129,41-60,female,right,True,midwest,0.0,lateafternoon,34.0,lateafternoon,66.0,lateafternoon,version5
+646,18-24,Female,Right,True,Midwest,0.0,Late evening (later than 7:30pm),21.0,Late evening (later than 7:30pm),49.0,Late evening (later than 7:30pm),version5
+640,18-24,Male,Right,True,Midwest,0.0,,42.0,Early evening (5pm-7:30pm),70.0,Early evening (5pm-7:30pm),version5
+557,18-24,Female,Right,True,Northeast,0.0,Early afternoon (12:00pm-2:30pm),17.0,Early afternoon (12:00pm-2:30pm),53.0,Late afternoon (2:30pm-5pm),version5
+547,18-24,Female,Right,True,South,0.0,Early afternoon (12:00pm-2:30pm),33.0,Early morning (earlier than 9:30am),63.0,Early evening (5pm-7:30pm),version5
+429,18-24,Female,Right,True,Midwest,0.0,Late Morning,28.0,Early Evening,70.0,Late Afternoon,version5
+661,18-24,Female,Right,True,Midwest,0.0,Late Afternoon,41.0,Late Afternoon,57.0,Late Evening,version5
+683,18-24,Female,Right,True,West,0.0,Late afternoon (2:30pm-5pm),123.0,Late evening (later than 7:30pm),157.0,Late morning (9:30am-12:00pm),version5
+35,41-60,female,right,False,,0.0,lateevening,24.0,latemorning,64.0,earlyevening,version5
+18,61+,female,right,True,midwest,0.0,earlyevening,38.0,lateafternoon,61.0,latemorning,version5
+665,18-24,Male,Right,True,Midwest,0.0,Late Evening,26.0,Late Evening,56.0,Early Afternoon,version5
+76,41-60,female,right,True,south,0.0,lateevening,32.0,lateevening,67.0,lateevening,version5
+600,41-60,Female,Right,True,Midwest,0.0,Early evening (5pm-7:30pm),35.0,Late evening (later than 7:30pm),62.0,Early morning (earlier than 9:30am),version5
+31,41-60,male,right,True,midwest,0.0,lateevening,22.0,earlyevening,43.0,lateevening,version5
+680,18-24,Female,Right,True,South,0.0,Late afternoon (2:30pm-5pm),19.0,Early evening (5pm-7:30pm),39.0,Early evening (5pm-7:30pm),version5
+382,18-24,Female,Right,True,Midwest,0.0,Early Evening,155.0,Late Evening,187.0,Late Afternoon,version5
+543,18-24,Female,Right,True,Midwest,0.0,Late Afternoon,23.0,Late Afternoon,47.0,Early Afternoon,version5
+611,61+,Male,Right,True,South,0.0,Late morning (9:30am-12:00pm),59.0,Late evening (later than 7:30pm),54.0,Late evening (later than 7:30pm),version5
+621,18-24,Female,Right,True,Midwest,0.0,Late afternoon (2:30pm-5pm),55.0,Late evening (later than 7:30pm),106.0,Late afternoon (2:30pm-5pm),version5
+407,18-24,Female,Right,True,Midwest,0.0,Early Evening,27.0,Late Afternoon,49.0,Early Evening,version5
+420,18-24,Female,Right,True,,0.0,Late Afternoon,52.0,Early Afternoon,73.0,Late Afternoon,version5
+238,41-60,Female,Right,True,West,0.0,Late Evening,33.0,Late Afternoon,75.0,Early Evening,version5
+135,25-40,female,right,False,,0.0,earlyafternoon,35.0,earlymorning,84.0,earlyafternoon,version5
+240,25-40,Female,Right,True,Midwest,0.0,Late Evening,34.0,Early Evening,64.0,Early Evening,version5
+472,18-24,Other,Right,False,,0.0,Early Afternoon,19.0,Late Morning,41.0,Late Morning,version5
+426,18-24,Female,Right,True,Midwest,0.0,Early Afternoon,24.0,Early Afternoon,51.0,Late Evening,version5

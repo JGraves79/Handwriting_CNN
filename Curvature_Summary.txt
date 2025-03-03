@@ -1,0 +1,8 @@
+
+Thresholds:
+Left Dataset Threshold: 0.7081199300123244
+Right Dataset Threshold: 0.7082701947140553
+
+Thresholds:
+Left Dataset Threshold: 0.7081199300123244
+Right Dataset Threshold: 0.7082701947140553
