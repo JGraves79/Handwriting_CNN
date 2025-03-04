@@ -17,50 +17,55 @@ The data consists of over 12,000 handwritten messages written by 90 volunteers o
 pngtojpeg_all.ipynb
 Text_file_creator.py
 
-## MNIST
+## PREPROCESSING
+Create two separate lists as csv files, pull 'Left' and 'left' into Left_ID_to_JPeg.csv and 'Right' and 'right' into Right_ID_JPEG.csv from Source_jpeg folder.
 
-# preprocessing, augmentation, normalization
+Left list will have 774 items and Right will have 786.
 
-Preprocessing
+Use Balanced_Filtered_Right_Data.py so the Right list is equal to the Left.
 
-JPEG dataset is resized and converted to png. 
-preprocessing.py
+Match_Right_to_Left.py so both will have 774 images
 
-Augmentation
+Next, Preprocessing_Left_JPEGS.py will make new file Preprocessed_Left_JPEGS.
 
-Data is processed into digital data and analyzed starting with the letter identification. Binary image with threshold converts the image to negative and shows the pressure used in each stroke.
+Preprocessed_Right_JPEGS.py will create new file Preprocessed_Right_JPEGS.
 
-Normalization
-
-Additional adjustments and augmentation is used to normalize each document to digitize the data.
+Data is processed into digital data and analyzed starting with grayscale conversion for removing color, Otsu's method for making the handwriting stand out by converting image to binary format. Then color inversion inverts it back to black writing on white background. Gaussian blur for smoothing the image and reduces noise and then morphological operations removes small artifacts and joins broken lines.
 
 ## Microsoft TROCR
 
 Transformer-based Optical Character Recognition was developed to recognize text or images in scanned documents
 This program records the digitized images to classify various metrics of the writing including, slant, stroke patterns, curvature, smoothness, and pressure.
 
+Left_JPEGS_Feature_Extraction.py and Right_JPEGS_Feature_Extraction.py 
+
 Curvature was determined to have the highest correlation to handedness.
+
+Visualize_Curvature_Distributions.py for visualizing bar plots for left and right.
 
 The handedness was classified to each individual as 0 for left-handed and 1 for righ-handed and rounded to the closest to make a determination.
 
-# Model Architecture
+Updated_Curvature_Classification.py
 
-Using np.random.seed(42) and tf.random.set_seed(42) ensures consistent results across runs. Reproducibility!
-Conv2d extracts spatial features, MaxPooling2D reduces spatial dimensions to prevent overfitting, Flatten converts 2D to 1D, and Dense fully connects layers
-Input shape 28, 28, 1. 28 pixel square and 1 indicates single channel which is grayscale
-5 epochs for computational efficiency and prevents overfitting
+# SMOTE
 
-cnn_train.py
+Synthetic Minority Oversampling Technique to balance the data. 
+
+SMOTE.py
+
+#CNN
+
+CNN_Training_with_Smote.py
 
 # Results
 
-The training program was able to use the sample data and predict handedness with 100% accuracy.
+The training program was able to use the sample data and predict handedness with 98% accuracy.
 
 # Installation
 
 Running this program requires to use of the folowing programs
 
-pip install os PIL tensoflow numpy pandas transformers cv2 matplotlib
+pip install os PIL tensoflow numpy pandas transformers cv2 matplotlib imblearn random shutil pathlib 
 
 # Contributors
 
